@@ -23,7 +23,7 @@ class ModelTests(TestCase):
     def test_new_user_email_normalized(self):
         email = 'test@TEST>COM'
         user = get_user_model().objects.create_user(
-            email = email,
+            email=email,
             password='123'
         )
 
